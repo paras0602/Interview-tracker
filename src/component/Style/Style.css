@@ -1,0 +1,268 @@
+@font-face {
+  font-family: 'Clarendon';
+  src: url('//db.onlinewebfonts.com/t/51430e57421d8cb4cea86dcd577ec180.eot');
+  src: url('//db.onlinewebfonts.com/t/51430e57421d8cb4cea86dcd577ec180.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/51430e57421d8cb4cea86dcd577ec180.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/51430e57421d8cb4cea86dcd577ec180.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/51430e57421d8cb4cea86dcd577ec180.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/51430e57421d8cb4cea86dcd577ec180.svg#Clarendon')
+      format('svg');
+}
+
+h1 {
+  font-weight: lighter;
+  font-family: 'clarendon';
+  font-size: 1.5em;
+}
+
+body {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+  /* font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; */
+  /* background: linear-gradient(white, #d3d8e8); */
+  background: #abcaf9;
+  font-family: 'futura';
+  font-weight: lighter;
+  color: #0e0e0e;
+}
+
+.wrapper {
+  padding: 20px;
+  display: flex;
+  
+}
+
+.login-wrapper {
+  display: flex;
+  /* position: absolute; */
+  /* top: 10px; */
+  /* right: 10px; */
+  flex-direction: column;
+  align-items: center;
+  border: #fbb829 solid 1px;
+  background-color: #fefbaf;
+  padding: 20px;
+  margin: 10px;
+  margin-left: 40%;
+}
+.outer-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.loginButtonWrapper {
+  margin: 20px;
+}
+
+#sign-up {
+  position: absolute;
+  left: 20px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid #8a8989;
+  margin: 5px 0;
+  padding: 5px;
+  background-color: rgb(250, 250, 250);
+}
+
+button {
+  /* color: blue; */
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #195ec3;
+  color: rgb(250, 250, 250);
+}
+
+.loginButton {
+  color: #195ec3;
+  background-color: rgb(250, 250, 250);
+  /* border: 1px; */
+  border: 1px solid #195ec3;
+}
+
+.signupButton {
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+/* .button {
+  border: none;
+  outline: none;
+  font-size: 11px;
+  font-family: 'Quicksand', sans-serif;
+  color: #f44336;
+  padding: 3px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #f44336;
+  background-color: transparent;
+} */
+
+/* .button:active {
+  border: 1px solid blue;
+} */
+
+.modalForm input {
+  margin: 5px;
+  padding: 3px;
+}
+
+.modalWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  z-index: 10;
+  color: #195ec3;
+}
+
+.modalBackground {
+  background: #fefbaf;
+  width: 50%;
+  height: 90%;
+  padding: 30px;
+}
+
+.modalForm {
+  display: flex;
+  /* width: 50%; */
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.modalForm input {
+  margin: 7px 0 15px 0;
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+.modalButtonWrapper {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.modalButton {
+  margin: 5px;
+  padding: 5px;
+}
+
+.inputSignUp {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#list {
+  /* border: black solid 2px; */
+  padding: 10px;
+  text-align: left;
+}
+
+#sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #ffe545;
+  color: #195ec3;
+  padding: 15px;
+  padding-left: 25px;
+  text-align: left;
+}
+
+/* colors 
+primary yellow: ffe545
+pale yellow: FEFBAF
+light blue: #abcaf9
+dark blue: #195ec3
+goldenrod: C2A34F
+orange: FBB829
+*/
+
+@media (max-width: 900px) {
+  .low-priority-col {
+    display: none;
+  }
+}
+
+/* application table */
+.tableContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#title {
+  text-align: center;
+  font-family: 'futura';
+  font-size: 2em;
+  font-weight: 400;
+}
+
+#stepTracker,
+#tracker {
+  border-collapse: collapse;
+  /* border: 3px solid #ddd; */
+  background: #ffffff;
+  margin: 20px;
+}
+
+tr {
+  border-bottom: 1px solid lightgrey;
+}
+
+#tracker td,
+#stepTracker td,
+#stepTracker th,
+#tracker th {
+  /* border: 1px solid #ddd; */
+  padding: 12px;
+  overflow: hidden;
+}
+#stepTracker tr:hover,
+#tracker tr:hover {
+  background-color: #ddd;
+}
+#stepTracker th,
+#tracker th {
+  padding: 10px;
+  text-align: center;
+  background-color: #fbb829;
+  color: #195ec3;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.operation {
+  text-align: center;
+}
+
+#hide-ID-col {
+  display: none;
+}
+
+#notes-column {
+  max-width: 200px;
+}
+
+#date-column {
+  max-width: 40px;
+}
